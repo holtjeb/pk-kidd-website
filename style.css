@@ -1,0 +1,229 @@
+/*https://www.w3schools.com/cssref/css3_pr_background-origin.asp */
+/*Color Opions:
+ >#342FF
+ >#EFCA08*/
+body {
+/*background-image: url("pictures/20191009_122528.jpg");*/
+background-color: lightgray;
+border: 10% solid gray;
+background-repeat: no-repeat;
+background-position: center top;
+background-attachment: fixed;
+background-size: 100% 100%;
+color : #FFFFFF;
+font-size: 24px;
+}
+.center_text {
+color:  #009FBF;
+background-color: #FFFFFF;
+text-align: center;
+border-width: 5px;
+border-color: #C4CCC1;
+border-style: outset;
+}
+
+.center {
+  text-align: center;
+  color:  #009FBF;
+  text-align: center;
+}
+
+footer.center_text {
+  font-size: 20px;
+}
+
+.space {
+padding-left: 50%;
+padding-right: 50%;
+padding-top: 1.5%;
+padding-bottom: 1.5%;
+border-style: none;
+}
+.gap {
+padding-left: 50%;
+padding-right: 50%;
+padding-top: 10%;
+padding-bottom: 10%;
+border-style: none;
+}
+a {
+color:#009FBF;
+}
+ol>li>a:hover {
+color : #FFFFFF;
+background-color: #009FBF;
+}
+ol {
+list-style-type: none;
+margin: 0;
+padding: 0;
+top: 0;
+text-size-adjust: 50%
+text-align: center;
+overflow: hidden;
+background-color: #FFFFFF;
+}
+ol>li>a {
+float: left;
+display: block;
+color: #009FBF;
+text-align: center;
+padding: .7% .8%;
+text-decoration: none;
+background-color: #FFFFFF;
+width: 33.33%;
+height: 5%;
+}
+
+* {
+box-sizing: border-box;
+}
+.box2 {
+color : #FFFFFF;
+background-color: #009FBF;
+padding-top: 1%;
+padding-bottom: 1%;
+padding-right: 1%;
+padding-left: 1%;
+font-size: 1.5vw;
+width: 100%;
+}
+.box1 {
+width:50%;
+margin: auto;
+border-style: double;
+border-color: #009FBF;
+border-radius: 35px;
+color : #FFFFFF;
+background-color: #009FBF;
+padding-top: 0;
+padding-right: 0;
+padding-bottom: 0;
+padding-left: 0;
+font-size: 1.5vw;
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  blockquote {
+    font-size: 28px;
+  }
+  span {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  a {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  blockquote {
+    font-size: 18px;
+  }
+  span {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+
+h2.names {
+  color:  #009FBF;
+  background-color: #FFFFFF;
+  border-width: 5px;
+  border-color: #C4CCC1;
+  border-style: outset;
+}
+
+img#rotate180 {
+ transform: rotate(180deg);
+ position: relative;
+ align-content: center;
+ top: 0;
+ width: auto;
+ height: 250px;
+ border-style: outset;
+}
+
+img.rotate90l{
+  transform: rotate(90deg);
+  align: left;
+  width: auto;
+  height: 150px;
+}
+/* school photo */
+img#main{
+  transform: rotate(180deg);
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  top: 25px;
+  left: 12.5%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Events Formatting */
+
+.event {
+  border-color: #FFFFFF;
+  border-style: outset;
+  border-width: 5px;
+}
+
+.event>.date{
+  width: 10%;
+  padding: 0px;
+}
+
+.event>.name{
+  width: 90%;
+  padding: 0px;
+}
+
+.event>h2 {
+  display: inline-block;
+}
+
+h2.date {
+  display: inline;
+  width: 20%;
+  height: 100px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  color:#009FBF;
+}
+h2.name {
+  display: inline;
+  width: 20%;
+  height: 100px;
+  padding: 5px;
+  background-color: #FFFFFF;
+  color: #009FBF;
+}

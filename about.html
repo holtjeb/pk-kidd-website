@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- https://htmlcolorcodes.com/ -->
+<html>
+<div class="center">
+  <img src="pictures/20191009_121953.jpg" id="rotate180">
+</div>
+<header class="box2">
+ <style>
+ .dropbtn {
+ background-color: #FFFFFF;
+ color: #009FBF;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+ text-align: center;
+ align-content: center;
+ border-style: outset;
+}
+ 
+.dropbtn:hover, .dropbtn:focus {
+ border-style: inset;
+}
+#myInput {
+ box-sizing: border-box;
+ background-image: url('searchicon.png');
+ background-position: 14px 12px;
+ background-repeat: no-repeat;
+ font-size: 16px;
+ padding: 14px 20px 12px 45px;
+ border: none;
+ border-bottom: 1px solid #ddd;
+}
+ 
+#myInput:focus {outline: 3px solid #ddd;}
+ 
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+ 
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f6f6f6;
+ min-width: 230px;
+ overflow: auto;
+ border: 1px solid #ddd;
+ z-index: 1;
+}
+ 
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+ 
+.dropdown a:hover {background-color: #ddd;}
+.show {display: block;}
+</style>
+
+<div class="dropdown">
+ <button onclick="myFunction()" class="dropbtn">Search</button>
+ <div id="myDropdown" class="dropdown-content">
+   <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+   <a href="index.html">P.K. Kidd</a>
+   <a href="about.html">About our School</a>
+   <a href="calendar.html">What's Next for P.K. Kidd</a>
+   <a href="multimedia.html">See us in action!</a>
+   <a href="contact.html">Need More Information?</a>
+   <a href="https://www.facebook.com/pages/P-K-Kidd-Preshool/165862603439713">Our Facebook Page</a>
+   <a href="https://www.google.com/maps/place/P+K+Kidd+Preschool/@35.6466896,-88.3908182,3a,75y,180h,90t/data=!3m6!1e1!3m4!1syGYQAI3f3PdbovJNcHKdUw!2e0!7i13312!8i6656!4m5!3m4!1s0x887c6eb26cbcf343:0xadb5bbb9971f2d92!8m2!3d35.6466138!4d-88.3910393">Find Us On The Map</a>
+ </div>
+</div>
+ 
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+ 
+function filterFunction() {
+ var input, filter, ul, li, a, i;
+ input = document.getElementById("myInput");
+ filter = input.value.toUpperCase();
+ div = document.getElementById("myDropdown");
+ a = div.getElementsByTagName("a");
+ for (i = 0; i < a.length; i++) {
+   txtValue = a[i].textContent || a[i].innerText;
+   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     a[i].style.display = "";
+   } else {
+     a[i].style.display = "none";
+   }
+ }
+}
+</script>
+</header>
+<head>
+	<title>P.K. Kidd Preschool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="space">
+</div>
+
+  <div class="box1">
+      <h1 class="center_text">About Us</h1>
+      <h4 class="center_text"><blockquote>Learn more about our <b>P.K. Kidd Preschool</b> and our Teachers!</blockquote></h4>
+  </div>
+</head >
+<header>
+  
+</header>
+<div class="gap">
+</div>
+<body>
+  <!-- Link for CSS About us -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <div class="box2">
+  <!-- Text Content -->
+    <h1 class="center_text">A Short History of <b>P.K. Kidd</b></h1>
+    <blockquote>P.K. Kidd was founded in 1999. A woman named Tina Graves approached me, Sherri Huddleston, about teaching her child in my home. I decided then that I would take several more kids also. The first 2 years, I operated out of my own home. In 2001, I relocated to 122 North Main. My enrollment continued to grow by word of mouth. In 2004, Phillip Renfroe approached me about constructing a building at 71 Lewis for P.K. Kidd and renting from him. In 2006, my husband and I purchased the building from Phillip. As of date, P.K. Kidd has served over 250 families in the Lexington area. </blockquote>
+  </div>
+  <div class="box2">
+    <h1 class="center_text">Our Teachers</h1>
+    <h2 class="names"><b> Sherri Huddleston:</b></h2>
+    <blockquote>The owner of P.K. Kidd is a native of Memphis, Tn. She has been married to Randy Huddleston (Pharmacist at Walmart) since 1985. They have 2 boys. John, is a Special Ed teacher at Westover and is married to the former, Kaylie Hays. John and Kaylie have a new baby, Ross Taylor. Grant, is the Accounting Manager with the Utility Department in Lexington and is married to the former, Jill Anderson. They have a son, Ian Grant, who will be 2 in september. Sherri loves being a Nana to these 2 sweet boys. </blockquote> 
+    <blockquote>Sherri attended Memphis State University for 2 years, majoring in Elementary Education. She was assistant director and 4 year old kindergarten teacher at Wee Care Child Development Center for 11 years in Southaven, Mississippi prior to moving to Lexington in 1997. In the Fall of 1999, Sherri began her preschool in Lexington. This Fall will be Sherri’s 31st year teaching pre-kindergarten and her 21st year at P.K. Kidd Preschool. </blockquote>
+    <h2 class="names"><b>Marcia Holt:</b></h2>
+    <blockquote>The other teacher is a native of Henderson County, Tn. Marcia has been married to Ben since 1995. Ben is a R & D Manager with the Carlstar Group in Jackson. They have 2 children. Darby is 18 and will be a Freshman at University of North Alabama. Jeb is 16 and is a junior at LHS.</blockquote>
+    <blockquote>Marcia attended Lexington High School. During high school and college, she worked at Little Acorn, where she worked with babies-school age children. She also babysat for multiple families in the Lexington area. Marica graduated from Bethel University with a Bachelor Degree in Elementary Education. She is certified to teach pre-kindergarten-8th grade. Marica taught for 2 and a half years with the Henderson County School System. When Marcia’s daughter was born, she stopped working and became a stay at home mom. In 2008, when both of her kids had started school, she began working at P.K. Kidd. Both of Marcia’s children attended P.K. Kidd when they were 4 years old. Marcia was hired to cover a maternity leave and never left! She has been a huge asset to P.K. Kidd and our success. This will be Marcia’s 12th year at P.K. Kidd.</blockquote>
+</blockquote>
+  </div>
+</body>
+<div class="space">
+</div>
+<footer class="box2" style="font-size:70%;">
+  <div class="center_text" style="font-size:24px">
+    <h3><a href="index.html"><b>P.K. Kidd Preschool</b></a></h3>
+    <h3><a href="https://www.google.com/maps/place/P+K+Kidd+Preschool/@35.6466896,-88.3908182,3a,75y,180h 90t/data=!3m6!1e1!3m4!1syGYQAI3f3PdbovJNcHKdUw!2e0!7i13312!8i6656!4m5!3m4!1s0x887c6eb26cbcf343:0xadb5bbb9971f2d92!8m2!3d35.6466138!4d-88.3910393"><b>71 Lewis Avenue</b></a></h3>
+    <h3><a href="contact.html"><b>Contact Us</b></a></h3>
+    <h3 style="color:white">Hidden Text!</h3>
+    <h3>Built with Repl.it</h3>
+  </div>
+</footer>
+</html>

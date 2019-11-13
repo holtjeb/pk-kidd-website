@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- https://htmlcolorcodes.com/ -->
+<html>
+<header class="box2">
+<div class="left">
+  <img src="pictures/20191009_121953.jpg" id="rotate180">
+</div>
+ <style>
+.dropbtn {
+ background-color: #FFFFFF;
+ color: #009FBF;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+ text-align: center;
+ border-style: outset;
+}
+.dropbtn:hover, .dropbtn:focus {
+ border-style: inset;
+}
+ 
+#myInput {
+ box-sizing: border-box;
+ background-image: url('searchicon.png');
+ background-position: 14px 12px;
+ background-repeat: no-repeat;
+ font-size: 16px;
+ padding: 14px 20px 12px 45px;
+ border: none;
+ border-bottom: 1px solid #ddd;
+}
+ 
+#myInput:focus {outline: 3px solid #ddd;}
+ 
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+ 
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f6f6f6;
+ min-width: 230px;
+ overflow: auto;
+ border: 1px solid #ddd;
+ z-index: 1;
+}
+ 
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+ 
+.dropdown a:hover {background-color: #ddd;}
+.show {display: block;}
+</style>
+
+<div class="dropdown">
+ <button onclick="myFunction()" class="dropbtn">Search</button>
+ <div id="myDropdown" class="dropdown-content">
+   <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+   <a href="index.html">P.K. Kidd</a>
+   <a href="about.html">About our School</a>
+   <a href="calendar.html">What's Next for P.K. Kidd</a>
+   <a href="multimedia.html">See us in action!</a>
+   <a href="contact.html">Need More Information?</a>
+   <a href="https://www.facebook.com/pages/P-K-Kidd-Preshool/165862603439713">Our Facebook Page</a>
+   <a href="https://www.google.com/maps/place/P+K+Kidd+Preschool/@35.6466896,-88.3908182,3a,75y,180h,90t/data=!3m6!1e1!3m4!1syGYQAI3f3PdbovJNcHKdUw!2e0!7i13312!8i6656!4m5!3m4!1s0x887c6eb26cbcf343:0xadb5bbb9971f2d92!8m2!3d35.6466138!4d-88.3910393">Find Us On The Map</a>
+ </div>
+</div>
+ 
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+ 
+function filterFunction() {
+ var input, filter, ul, li, a, i;
+ input = document.getElementById("myInput");
+ filter = input.value.toUpperCase();
+ div = document.getElementById("myDropdown");
+ a = div.getElementsByTagName("a");
+ for (i = 0; i < a.length; i++) {
+   txtValue = a[i].textContent || a[i].innerText;
+   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+     a[i].style.display = "";
+   } else {
+     a[i].style.display = "none";
+   }
+ }
+}
+</script>
+</header>
+<head>
+	<title>P.K. Kidd Preschool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="space">
+</div>
+
+  <div class="box1">
+    <h2 class="center_text">Videos and Pictures</h2>
+    <blockquote class="center_text">See what we do here at <b>P.K. Kidd Preschool!</b></blockquote>
+  </div>
+</head >
+<header>
+  
+</header>
+<div class="gap">
+</div>
+<body>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <div class="box2">
+    <h1 class="center_text">Videos</h1>
+    <blockquote>This is incomplete for right now. We are working on getting a form for video and photo consent forms. </blockquote>
+  </div>
+<div class="space">
+</div>
+  <div class="box2">
+    <h1 class="center_text">Photos</h1>
+    <blockquote>This is incomplete for right now. We will be uploading photos of the inside without any kids in them for the time being.</blockquote>
+  </div>
+</body>
+<div class="space">
+</div>
+<div class="space">
+</div>
+<footer class="box2" style="font-size:70%;">
+  <div class="center_text" style="font-size:24px">
+    <h3><a href="index.html"><b>P.K. Kidd Preschool</b></a></h3>
+    <h3><a href="https://www.google.com/maps/place/P+K+Kidd+Preschool/@35.6466896,-88.3908182,3a,75y,180h 90t/data=!3m6!1e1!3m4!1syGYQAI3f3PdbovJNcHKdUw!2e0!7i13312!8i6656!4m5!3m4!1s0x887c6eb26cbcf343:0xadb5bbb9971f2d92!8m2!3d35.6466138!4d-88.3910393"><b>71 Lewis Avenue</b></a></h3>
+    <h3><a href="contact.html"><b>Contact Us</b></a></h3>
+    <h3 style="color:white">Hidden Text!</h3>
+    <h3>Built with Repl.it</h3>
+  </div>
+</footer>
+</html>
