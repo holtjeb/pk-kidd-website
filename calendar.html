@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <!-- https://htmlcolorcodes.com/ -->
 <html>
-<div class="center">
+<header class="box2">
+<div class="left">
   <img src="pictures/20191009_121953.jpg" id="rotate180">
 </div>
-<header class="box2">
+<!-- Search bar begins -->
  <style>
 .dropbtn {
  background-color: #FFFFFF;
@@ -39,7 +40,14 @@
  position: relative;
  display: inline-block;
 }
- 
+  /* controls the position of the search bar */
+ .dropdown {
+ position: absolute;
+ right: .5%;
+ top: 1%;
+ display: inline-block;
+}
+
 .dropdown-content {
  display: none;
  position: absolute;
@@ -56,7 +64,11 @@
  text-decoration: none;
  display: block;
 }
- 
+ /* controls the text position for the search bar */
+ #myDropdown{
+  left: -200px;
+}
+
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
 </style>
@@ -99,31 +111,86 @@ function filterFunction() {
 }
 </script>
 </header>
+<!-- Search bar endssssss -->
+<!-- Appears as "P.K. Kidd Preshool" in the tab -->
 <head>
 	<title>P.K. Kidd Preschool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="space">
 </div>
-
+<!-- Appears as "P.K. Kidd Preshool" in the tab -->
+<!--  Box1 begins  -->
   <div class="box1">
       <h2 class="center_text">Calendar</h2>
       <blockquote class="center_text">Check out our upcoming events at <b>P.K. Kidd Preschool!</b></blockquote>
   </div>
 </head >
-<header>
-  
-</header>
+<!-- Box1 ends -->
 <div class="gap">
 </div>
 <body>
+   <!-- Box2 begins  -->
+  <!-- Link for CSS About us -->
 	<link rel="stylesheet" type="text/css" href="style.css">
   <div class="box2">
+    <!-- Text Content -->
     <h1 class="center_text">Calendar</h1>
     <blockquote>We are working on making boxes which will show different upcoming events at the school. This will be similarly done on the home page, but this one will have more events dispalyed on it, almosts months ahead. We will also attempt to add a "No School" feature to this page to signify Holidays or Snow Days.</blockquote>
+    <div class="monthContainer">
+      <h1 class="center_text">November</h1>
+      <ul class="event">
+        <li class="date"><b>Nov. 12th</b></li>
+        <li class="name">Testing for Concept</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Nov. 13th</b></li>
+        <li class="name">Design Changes</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Nov. 15th</b></li>
+        <li class="name">Showcase of New Calendar & Editing Feedback</li>
+      </ul>
+    </div>
+    <div class="space">
+    </div>
+    <div class="monthContainer">
+      <h1 class="center_text">December</h1>
+      <ul class="event">
+        <li class="date"><b>Dec. 12th</b></li>
+        <li class="name">Nothing to see here...</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Dec. 13th</b></li>
+        <li class="name">...or here...</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Dec. 15th</b></li>
+        <li class="name">...just placeholders...</li>
+      </ul>
+    </div>
+    <div class="space">
+    </div>
+    <div class="monthContainer">
+      <h1 class="center_text">January</h1>
+      <ul class="event">
+        <li class="date"><b>Jan. 12th</b></li>
+        <li class="name">Can you please stop scrolling?</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Jan. 13th</b></li>
+        <li class="name">Please?</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Jan. 15th</b></li>
+        <li class="name">Alright, now you cannot scroll down anymore, so I win. Haha!</li>
+      </ul>
+    </div>
   </div>
 </body>
+<!-- The REAL Box2 ends  -->
 <div class="space">
 </div>
+<!-- The imposter Box2 begins... -->
 <footer class="box2" style="font-size:70%;">
   <div class="center_text" style="font-size:24px">
     <h3><a href="index.html"><b>P.K. Kidd Preschool</b></a></h3>
@@ -131,6 +198,11 @@ function filterFunction() {
     <h3><a href="contact.html"><b>Contact Us</b></a></h3>
     <h3 style="color:white">Hidden Text!</h3>
     <h3>Built with Repl.it</h3>
+    <h3 style="color:white">Hidden Text!</h3>
+    <h3>Or maybe you win... Cheater!</h3>
   </div>
 </footer>
 </html>
+<!-- The imposter Box2 ends  -->
+ <!--  -->
+ <!-- /*  */ css comment -->

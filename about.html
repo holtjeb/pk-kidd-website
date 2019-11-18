@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!-- https://htmlcolorcodes.com/ -->
 <html>
-<div class="center">
+<header class="box2">
+<div class="left">
   <img src="pictures/20191009_121953.jpg" id="rotate180">
 </div>
-<header class="box2">
+<!-- Search bar begins -->
  <style>
  .dropbtn {
  background-color: #FFFFFF;
@@ -38,7 +39,14 @@
  position: relative;
  display: inline-block;
 }
- 
+  /* controls the position of the search bar */ 
+.dropdown {
+ position: absolute;
+ right: .5%;
+ top: 1%;
+ display: inline-block;
+}
+
 .dropdown-content {
  display: none;
  position: absolute;
@@ -55,7 +63,11 @@
  text-decoration: none;
  display: block;
 }
- 
+ /* controls the text position for the search bar */ 
+ #myDropdown{
+  left: -200px;
+}
+
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
 </style>
@@ -73,7 +85,7 @@
    <a href="https://www.google.com/maps/place/P+K+Kidd+Preschool/@35.6466896,-88.3908182,3a,75y,180h,90t/data=!3m6!1e1!3m4!1syGYQAI3f3PdbovJNcHKdUw!2e0!7i13312!8i6656!4m5!3m4!1s0x887c6eb26cbcf343:0xadb5bbb9971f2d92!8m2!3d35.6466138!4d-88.3910393">Find Us On The Map</a>
  </div>
 </div>
- 
+
 <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -98,23 +110,25 @@ function filterFunction() {
 }
 </script>
 </header>
+<!-- Search bar endssssss -->
+<!-- Appears as "P.K. Kidd Preshool" in the tab -->
 <head>
 	<title>P.K. Kidd Preschool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="space">
 </div>
-
+<!-- Appears as "P.K. Kidd Preshool" in the tab -->
+<!--  Box1 begins  -->
   <div class="box1">
       <h1 class="center_text">About Us</h1>
       <h4 class="center_text"><blockquote>Learn more about our <b>P.K. Kidd Preschool</b> and our Teachers!</blockquote></h4>
   </div>
 </head >
-<header>
-  
-</header>
+<!-- Box1 ends -->
 <div class="gap">
 </div>
 <body>
+  <!-- Box2 begins  -->
   <!-- Link for CSS About us -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <div class="box2">
@@ -133,8 +147,10 @@ function filterFunction() {
 </blockquote>
   </div>
 </body>
+<!-- The REAL Box2 ends  -->
 <div class="space">
 </div>
+<!-- The imposter Box2 begins... -->
 <footer class="box2" style="font-size:70%;">
   <div class="center_text" style="font-size:24px">
     <h3><a href="index.html"><b>P.K. Kidd Preschool</b></a></h3>
@@ -145,3 +161,6 @@ function filterFunction() {
   </div>
 </footer>
 </html>
+<!-- The imposter Box2 ends  -->
+ <!--  -->
+ <!-- /*  */ css comment -->

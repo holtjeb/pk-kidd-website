@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!-- https://htmlcolorcodes.com/ -->
 <html>
-<div class="center">
-  <img src="pictures/20191009_121953.jpg" id="rotate180">
-</div>
 <header class="box2">
+	<div class="left">
+		<img src="pictures/20191009_121953.jpg" id="rotate180">
+</div>
+<!-- Search bar begins -->
  <style>
 .dropbtn {
  background-color: #FFFFFF;
@@ -38,7 +39,14 @@
  position: relative;
  display: inline-block;
 }
- 
+   /* controls the position of the search bar */
+ .dropdown {
+ position: absolute;
+ right: .5%;
+ top: 1%;
+ display: inline-block;
+}
+
 .dropdown-content {
  display: none;
  position: absolute;
@@ -55,7 +63,11 @@
  text-decoration: none;
  display: block;
 }
- 
+  /* controls the text position for the search bar */
+ #myDropdown{
+  left: -200px;
+}
+
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
 </style>
@@ -98,34 +110,38 @@ function filterFunction() {
 }
 </script>
 </header>
+<!-- Search bar endssssss -->
+<!-- Appears as "P.K. Kidd Preshool" in the tab -->
 <head>
 	<title>P.K. Kidd Preschool</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="space">
 </div>
-
+<!-- Appears as "P.K. Kidd Preshool" in the tab -->
+<!--  Box1 begins  -->
   <div class="box1">
       <h2 class="center_text">Contact Us</h2>
       <blockquote class="center_text">Get in touch with us and learn more about <b>P.K. Kidd Preschool!</b></blockquote>
   </div>
 </head >
-<header>
-  
-</header>
+<!-- Box1 ends -->
 <div class="gap">
 </div>
 <body>
+     <!-- Box2 begins  -->
+  <!-- Link for CSS About us -->
 	<link rel="stylesheet" type="text/css" href="style.css">
   <div class="box2">
+     <!-- Text Content -->
     <h1 class="center_text">Phone Numbers</h1>
-    <blockquote>
-      <p>   Sherri Huddleston: 731-307-8634</p>
-      <p>   Marcia Holt: 731-798-0305</p>
-    </blockquote>
+    <blockquote>Sherri Huddleston: 731-307-8634</blockquote>
+    <blockquote>Marcia Holt: 731-798-0305</blockquote>
   </div>
 </body>
+<!-- The REAL Box2 ends  -->
 <div class="space">
 </div>
+<!-- The imposter Box2 begins... -->
 <footer class="box2" style="font-size:70%;">
   <div class="center_text" style="font-size:24px">
     <h3><a href="index.html"><b>P.K. Kidd Preschool</b></a></h3>
@@ -136,3 +152,7 @@ function filterFunction() {
   </div>
 </footer>
 </html>
+<!-- The imposter Box2 ends  -->
+
+ <!--  -->
+ <!-- /*  */ css comment -->

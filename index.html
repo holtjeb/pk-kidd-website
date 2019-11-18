@@ -37,11 +37,11 @@
 }
  
 #myInput:focus {outline: 3px solid #ddd;}
- 
+ /* controls the position of the search bar */ 
 .dropdown {
  position: absolute;
- right: 0;
- top: 0;
+ right: .5%;
+ top: 1%;
  display: inline-block;
 }
 
@@ -61,7 +61,7 @@
  text-decoration: none;
  display: block;
 }
-
+/* controls the text position for the search bar */ 
 #myDropdown{
   left: -200px;
 }
@@ -83,7 +83,7 @@
    <a href="https://www.google.com/maps/place/P+K+Kidd+Preschool/@35.6466896,-88.3908182,3a,75y,180h,90t/data=!3m6!1e1!3m4!1syGYQAI3f3PdbovJNcHKdUw!2e0!7i13312!8i6656!4m5!3m4!1s0x887c6eb26cbcf343:0xadb5bbb9971f2d92!8m2!3d35.6466138!4d-88.3910393">Find Us On The Map</a>
  </div>
 </div>
- <!-- search bar -->
+ <!-- still search bar -->
 <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -107,19 +107,21 @@ function filterFunction() {
  }
 }
 </script>
-<!-- Search bar ends --> <!-- The nightmare is only beginning.... -->
-
 </header>
+<!-- Search bar ends --> <!-- The nightmare is only beginning.... -->
+<!-- Appears as "P.K. Kidd Preshool" in the tab -->
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
 	<title>P.K. Kidd Preschool</title>
 	<div class="space">
 	</div>
-<!-- Box1 with school pic begins -->
+  <!-- Appears as "P.K. Kidd Preshool" in the tab ^ -->
+<!-- Box1 with school pic & "NO SCHOOL" Sign begins -->
 </div>
 <body>
+<!--Start of different scenarios for "NO SCHOOL"-->
+<!--End of different scenarios for "NO SCHOOL"-->
 <div class="container">
   <img src="pictures/20191009_122050_HDR.jpg" id="main" alt="School_Picture">
   <div class="text-block">
@@ -129,7 +131,7 @@ function filterFunction() {
     </div>
   </div>
 </div>
-<!-- Box1 with school pic ends -->
+<!-- Box1 with school pic & "NO SCHOOL" Sign ends -->
  <!-- Box2 begins -->
 	<link rel="stylesheet" type="text/css" href="style.css">
   <div class="box2">
@@ -139,14 +141,24 @@ function filterFunction() {
     <img src="pictures/20191009_122422.jpg" class="rotate90l">
     <span>We make it our goal to teach your kids first, but we find it just as important for them to have fun and be creative! Everyday, we have a craft which the student can make on their own. We show them how to make all kinds of interesting crafts dealing with our weekly letter, holidays, and more!</span>
     <h2 class="center_text">What's Up Next?</h2>
-    <blockquote>We are working on making boxes which will show different upcoming events at the school. This will be similarly done on the calendar page, but the calendar page will have more. This page will have 2-3 events shown on it.</blockquote>
+    <blockquote>Here's a short list of what we are doing soon here at P.K. Kidd. For more information and more events, check out our <a href="calendar.html" style="color:#FFFFFF">Calendar Page</a>!</blockquote>
      <!-- Box2 ends -->
     <!-- Homepage calendar -->
-    <div class="event">
-      <h2 class="date">Nov. 12th</h2>
-      <h2 class="name">Testing for Concept</h2>
+    <div id="homepageCalendar">
+      <ul class="event">
+        <li class="date"><b>Nov. 12th</b></li>
+        <li class="name">Testing for Concept</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Nov. 13th</b></li>
+        <li class="name">Design Changes</li>
+      </ul>
+      <ul class="event">
+        <li class="date"><b>Nov. 15th</b></li>
+        <li class="name">Showcase of New Calendar & Editing Feedback</li>
+      </ul>
     </div>
-     <!-- Calender ends -->
+     <!-- Homepage calender ends -->
     <h2 class="center_text">How much does P.K. Kidd Cost?</h2>
     <blockquote>Information Not Yet Recieved</blockquote>
     <h2 class="center_text">Ready to take the next Step?</a></h2>
@@ -168,3 +180,4 @@ function filterFunction() {
 </html>
 
  <!--  -->
+ <!-- /*  */ css comment -->
