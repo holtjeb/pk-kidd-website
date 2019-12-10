@@ -282,4 +282,22 @@ img#main{
 }
 /* Events Formatting End */
 
+/* Multimedia Picture CSS Start*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Multimedia Picture CSS End*/
+
+
+
 /*  */ 
